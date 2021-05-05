@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 nav {
-    position: fixed;
+    position:fixed;
+    z-index: 2;
     top: 0;
     width: 100%;
     display: flex;
@@ -13,7 +15,6 @@ nav {
     align-items: center;
     min-height: 8vh;
     background-color: #5D4954;
-    font-family: "Poppins", sans-serif;
 }
 
 .logo {
@@ -65,7 +66,7 @@ nav {
     }
     
     .nav-links {
-        position: fixed;
+        position:fixed;
         right: 0px;
         height: 92vh;
         top: 8vh;
@@ -123,6 +124,62 @@ nav {
     background-repeat: no-repeat;
     display:flex;
     justify-content: center;
+}
+
+h1{
+    position:fixed;
+    z-index: 2;
+    color: #5D4954;
+    top: 25%;
+    font-size: 60px;
+    letter-spacing: 12px;
+    font-weight: 900;
+}
+
+h1:hover{
+    letter-spacing: 30px;
+    transition: 1.5s ease-out;
+}
+
+h3{
+    position:fixed;
+    z-index: 2;
+    color: white;
+    top: 45%;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    margin: 0 100px;
+}
+
+.shade{
+    position:absolute;
+    z-index: 1;
+    background: rgba(0,0,0,0.4);
+    height:100vh;
+    width:100%;
+}
+
+button{
+    position:fixed;
+    z-index: 2;
+    color: white;
+    background: none;
+    bottom: 20%;
+    width: 200px;
+    height: 60px;
+    margin-top: 5vh;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    cursor: pointer;
+    border: 4px solid white;
+}
+
+button:hover{
+    background: rgba(255, 255, 255, 0.2);
+    transition: .5s;
+    width: 250px;
 }
 
 
