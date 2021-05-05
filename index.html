@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
-
 
     <nav>
         <div class="logo">
@@ -30,16 +31,35 @@
     </nav>
 
     <header id="showcase">
-        <h1>EXPLORE</h1>
-        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt numquam id delectus odit aliquid nisi
+        <h1 id="explore">EXPLORE</h1>
+        <h3 class="placeholder-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt numquam id delectus odit aliquid nisi
             corrupti obcaecati possimus quae, fugiat repellendus explicabo doloribus voluptate error vel necessitatibus
             magni quia quo.</h3>
         <div class="shade"></div>
-        <button id="main-btn">READ MORE</button>
+        <button class="main-btn">READ MORE</button>
     </header>
 
 </body>
 
 <script src="app.js"></script>
+<script>
+    $(".burger").click(function(){
+        const explore = $('#explore')
+        explore.hide()
+        const lorem = $('.placeholder-txt')
+        lorem.hide()
+
+        const btn = $('.main-btn')
+        btn.hide()
+
+        if(!$('.nav-links').hasClass('nav-active')) {
+            console.log('working')
+            explore.fadeIn(1800)
+            lorem.fadeIn(1800)
+            btn.fadeIn(1800)
+        }
+    })
+
+</script>
 
 </html>

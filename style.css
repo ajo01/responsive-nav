@@ -58,6 +58,8 @@ nav {
     .nav-links {
         width: 60%;
     }
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -74,7 +76,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 100%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
@@ -87,11 +89,24 @@ nav {
         display: block;
         cursor: pointer;
     }
+
+    button{
+        bottom: 15%;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+
+    button{
+        bottom: 5%;
+    }
 }
 
 .nav-active {
         transform: translateX(0%);
 }
+
 
 @keyframes navLinkFade {
     from {
@@ -124,6 +139,7 @@ nav {
     background-repeat: no-repeat;
     display:flex;
     justify-content: center;
+    align-items: center;
 }
 
 h1{
@@ -134,6 +150,7 @@ h1{
     font-size: 60px;
     letter-spacing: 12px;
     font-weight: 900;
+    text-shadow:1px 1px #484848;
 }
 
 h1:hover{
@@ -144,8 +161,8 @@ h1:hover{
 h3{
     position:fixed;
     z-index: 2;
+    top:45%;
     color: white;
-    top: 45%;
     font-size: 15px;
     letter-spacing: 5px;
     font-weight: 600;
@@ -160,26 +177,28 @@ h3{
     width:100%;
 }
 
+
+
+button:hover{
+    background: rgba(255, 255, 255, 0.2);
+    transition: .5s ease-out;
+    width: 250px;
+    border: 6px solid white;
+}
+
 button{
     position:fixed;
     z-index: 2;
     color: white;
     background: none;
-    bottom: 20%;
     width: 200px;
     height: 60px;
-    margin-top: 5vh;
+    margin-top:220px;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 5px;
     cursor: pointer;
     border: 4px solid white;
-}
-
-button:hover{
-    background: rgba(255, 255, 255, 0.2);
-    transition: .5s;
-    width: 250px;
 }
 
 
