@@ -132,7 +132,8 @@ nav {
 }
 
 #showcase{
-    background-image: url('/img/m1.jpg');
+    /* background-image: url('/img/m1.jpg'); */
+    background-image: url('./img/m1.jpg');
     margin-top:8vh;
     height: 100vh;
     background-size: cover;
